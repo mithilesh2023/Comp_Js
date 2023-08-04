@@ -19,11 +19,8 @@ body{
     background-color: rgba(0, 0, 0, 0.9);
     padding: 20px 24px;
     border-radius: 10px;
-}
-
-.timerDisplay{
-    font-size: 50px;
-    font-weight: 600;
+    font-size: 40px;
+    font-weight: 500;
 }
 
 .buttons{
@@ -32,12 +29,21 @@ body{
 
 .btn{
     font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
     background: none;
     border: none;
     color: #fff;
-    background-color: var(--clr);
     padding: 12px 24px;
     margin-inline: 12px;
     border-radius: 8px;
     cursor: pointer;
+}
+#stop{
+    background-color: tomato;
+}
+#start{
+    background-color: green;
+}
+#reset{
+    background-color: orange;
 }
