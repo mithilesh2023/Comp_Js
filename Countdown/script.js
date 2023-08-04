@@ -23,6 +23,7 @@ function updateCountDown(){
     countdown2.innerHTML=`${seconds}:${miniSecond}`;
    
 
+
     if (secTime < 0) {
       clearInterval(timerId)
     }
@@ -34,6 +35,12 @@ btn.addEventListener('click',function(){
     clearInterval(timerId)
     para.innerHTML="";
     countdown2.innerHTML="";
+})
+
+btn.addEventListener('dblclick',function(){
+  timerId=setInterval(updateCountDown,1000);
+  stop.innerHTML="";
+  countdown2.innerHTML="secnds left"
 })
 
 
