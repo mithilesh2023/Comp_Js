@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="conatainer">
+        <div class="left">
+            <select id="conversionType">
+                <option selected disabled ">Select conversion type</option>
+                <option value="binary">Binary</option>
+                <option value="octal">Octal</option>
+                <option value="hexadecimal">Hexadecimal</option>
+            </select>
+          <input type="text" id="input-value">
+       
+        </div>
+        <div class="middle">
+            <button class="btn" onclick="convertNumber()">Submit</button>
+          <button class="btn" onclick="swapConversion()">Swap</button>
+        </div>
+        <div class="right">
+           <div class="result" >
+            <h1 id="result"></h1>
+           </div>
+            
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

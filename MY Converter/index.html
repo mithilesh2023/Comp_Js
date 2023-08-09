@@ -13,17 +13,17 @@
     <div class="container">
         <div class="input">
             <h3>Form</h3>
-            <select id="inputId" onchange="FromSelectValue()">
-                <option>Decimal</option>
-                <option>Octal</option>
-                <option>Binary</option>
-                <option>Hexadecimal</option>
+            <select id="conversionType" onchange="conversionType()">
+                <option value="decimal">Decimal</option>
+                <option value="octal">Octal</option>
+                <option  value="binary">Binary</option>
+                <option  value="hexadecimal">Hexadecimal</option>
             </select> <br>
-            <textarea id="textarea" cols="30" rows="10"></textarea>
+            <textarea  cols="30" rows="10" id="input-value"></textarea>
         </div>
         <div>
-            <button class="swap">Swap</button><br>
-            <button class="submit">Submit</button>
+            <button class="swap" onclick="swapConversion()">Swap</button><br>
+            <button class="submit" onclick="convertNumber()">Submit</button>
         </div>
         <div class="output">
             <h3>To</h3>
@@ -33,7 +33,7 @@
                 <option>Binary</option>
                 <option>Hexadecimal</option>
             </select><br>
-            <textarea id="textarea" cols="30" rows="10"></textarea>
+            <textarea id="result" cols="30" rows="10"></textarea>
         </div>
     </div>
 
