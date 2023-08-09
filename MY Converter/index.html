@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>Converter</h2>
+    <div class="container">
+        <div class="input">
+            <h3>Form</h3>
+            <select id="inputId" onchange="FromSelectValue()">
+                <option>Decimal</option>
+                <option>Octal</option>
+                <option>Binary</option>
+                <option>Hexadecimal</option>
+            </select> <br>
+            <textarea id="textarea" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <button class="swap">Swap</button><br>
+            <button class="submit">Submit</button>
+        </div>
+        <div class="output">
+            <h3>To</h3>
+            <select id="outputId"  onchange="ToSelectValue()">
+                <option>Decimal</option>
+                <option>Octal</option>
+                <option>Binary</option>
+                <option>Hexadecimal</option>
+            </select><br>
+            <textarea id="textarea" cols="30" rows="10"></textarea>
+        </div>
+    </div>
+
+    <script src="scirpt.js"></script>
+</body>
+
+</html>
