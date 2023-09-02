@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="num1"><br><br>
+    <input type="number" id="num2"><br><br>
+    <button type="button" onclick="additon()">click</button>
+    <h1 id="result"></h1>
+    <script>
+        function additon(){
+            let num1=document.getElementById('num1').value
+            let num2=document.getElementById('num2').value
+            let num3=parseInt(num1)+parseInt(num2);
+            // alert(num3)
+            let result=document.getElementById('result').innerHTML=num3
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="http://www.google.com" id="form">
+        <label for="">Name</label>
+        <input type="text" placeholder="enter yourname" id="username"> <br><br>
+        <label for="">Roll Num</label>
+        <input type="number" placeholder="enter yourname" id="roll"> <br><br>
+        <button id="btn" onclick="submit(e)" type="submit">submit</button>
+    </form>
+    <!-- <p id="result"></p> -->
+    <script>
+        let form=document.getElementById('form')
+        let result=document.getElementById('result')
+        function submit(e){
+        btn.addEventListener('click',(e)=>{
+            e.preventDefault()
+            form.save()
+            // result.innerHTML="form submmited."
+
+        })
+    }
+        
+    </script>
+</body>
+</html>
